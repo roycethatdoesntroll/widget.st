@@ -31,11 +31,9 @@
   cmd.style.cssText = "font-size:11px; opacity:0.7; margin-bottom:4px;";
   if (style === "command") {
     cmd.textContent = "==>";
-  } else {
-    cmd.textContent = "SBURB TIME";
-  }
+  } 
   root.appendChild(cmd);
-
+}
   const timeEl = document.createElement("div");
   timeEl.style.cssText = `
     font-size: 28px; font-weight: bold; letter-spacing: 2px;
