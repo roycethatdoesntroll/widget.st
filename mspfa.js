@@ -30,7 +30,17 @@
         badges.map(b => `<span title="${b.n||b}" style="background:#333;padding:1px 4px;margin:1px;border-radius:3px;font-size:10px">${b.n||b}</span>`).join("") +
         `</div>`;
     }
+    
+root.style.cssText = `
+  font:12px/1.4 ${WS.settings.font || "sans-serif"};
+  max-width:280px;border:1px solid #444;padding:10px;
+  background:${WS.settings.bg_color || "#1a1a1a"};
+  color:${WS.settings.text_color || "#eeeeee"}
+`;
 
+    style="color:${WS.settings.link_color || "#7cf"};text-decoration:none"
+
+    
     // top stories (owned/edited)
     const stories = (u.s || u.stories || []).slice(0, 5);
     if (stories.length) {
