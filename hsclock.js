@@ -3,7 +3,7 @@
   const s = WS.settings || {};
 
   // Settings:
-  // accent (color): default Sburb green
+  // accent (color): default green
   // show_seconds (checkbox)
   // style (select): "digital" | "command" | "skaia"
   // timezone_label (text): optional label under the time
